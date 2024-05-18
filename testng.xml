@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <groups>
+        <run>
+            <include name="Smoke"/>
+        </run>
+    </groups>
+    <test verbose="2" preserve-order="true" name="C:/Users/HP/Desktop/Obsquara/Batch31/src/test/java/trial">
+        <classes>
+            <class name="trial.TEstTrail">
+            </class>
+        </classes>
+    </test>
+</suite>

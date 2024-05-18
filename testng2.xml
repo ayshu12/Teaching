@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/HP/Desktop/Obsquara/Batch31">
+        <parameter name="username" value="admin"></parameter>
+        <parameter name="password" value="admin123"></parameter>
+        <groups>
+            <run>
+                <include name="SmokeTest"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="testngTrialBasics.Annotations">
+                <methods>
+                    <include name="test1"/>
+                    <include name="test2"/>
+                </methods>
+            </class>
+            <class name="testngTrialBasics.TestNGParam">
+                <methods>
+                    <include name="loginwithCredentials"/>
+                </methods>
+            </class>
+            <class name="testngTrialBasics.TestNGTest">
+                <methods>
+                    <include name="loginPagetest1"/>
+                    <include name="verifyLogintest3"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
